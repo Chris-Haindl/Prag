@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prag Reiseführer | 26. - 29. Oktober 2026</title>
+    <style>
+        :root {
+            --bg-color: #f4f6f8;
+            --card-bg: #ffffff;
+            --primary: #2c3e50;
+            --accent: #e67e22;
+            --accent-green: #27ae60;
+            --text-color: #333333;
+            --text-muted: #666666;
+            --border-color: #e0e0e0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.5;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--bg-color);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--primary);
+            margin: 0;
+        }
+
+        .badge {
+            background-color: var(--accent);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .badge-green {
+            background-color: var(--accent-green);
+        }
+
+        .badge-blue {
+            background-color: #2980b9;
+        }
+
+        .timeline {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 12px;
+            border-left: 2px solid #ddd;
+        }
+
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-time {
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: var(--accent);
+        }
+
+        .timeline-text {
+            font-size: 0.95rem;
+            margin: 2px 0 0 0;
+        }
+
+        .tag {
+            display: inline-block;
+            font-size: 0.75rem;
+            padding: 2px 6px;
+            border-radius: 4px;
+            background-color: #eee;
+            color: #555;
+            margin-top: 4px;
+        }
+
+        .tag-veg { background-color: #e8f8f5; color: #117a65; }
+        .tag-coffee { background-color: #fef9e7; color: #b7950b; }
+
+        .spot-list {
+            margin: 0;
+            padding-left: 18px;
+        }
+
+        .spot-list li {
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+
+        .spot-title {
+            font-weight: bold;
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Prag Kurztrip | Reiseführer</h1>
+        <p>26. – 29. Oktober 2026 | Unterkunft: Golden Angel Suites (Celetná 29)</p>
+    </div>
+
+    <div class="grid">
+
+        <!-- KARTE 1: UNTERKUNFT & LAGE -->
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Unterkunft Basis</h2>
+                <span class="badge badge-blue">Hotel</span>
+            </div>
+            <p class="spot-title">Golden Angel Suites by Adrez Living</p>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: -5px;">Adresse: Celetná 29, Altstadt</p>
+            <ul class="spot-list" style="margin-top: 10px;">
+                <li><strong>Anreise (Mo, 15:39):</strong> 11 Min. Fußweg vom Hauptbahnhof.</li>
+                <li><strong>Abreise (Do, 14:21):</strong> 11 Min. Fußweg zum Hauptbahnhof.</li>
+                <li><strong>Ausstattung:</strong> Küchenzeile, Nespresso-Maschine im Zimmer.</li>
+            </ul>
+        </div>
+
+        <!-- KARTE 2: FRÜHSTÜCK & BÄCKEREIEN NEARBY -->
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Frühstück & Bäckereien</h2>
+                <span class="badge badge-green">Um die Ecke</span>
+            </div>
+            <ul class="spot-list">
+                <li>
+                    <span class="spot-title">Coffee Room Celetná</span> (Celetná 12)
+                    <br><span class="tag tag-coffee">Specialty Coffee</span> Porridge, Avotoast, Batch Brew (1-2 Min. Fußweg).
+                </li>
+                <li>
+                    <span class="spot-title">Café Černá Madona</span> (Celetná 34)
+                    <br><span class="tag">Vor Ort</span> Kubistisches Café, Eggs Benedict, Ziegenkäse-Toast.
+                </li>
+                <li>
+                    <span class="spot-title">Bistro Monk</span> (Michalská 20)
+                    <br><span class="tag">All-Day Brunch</span> Protein-Bowls, Eiergerichte & Specialty Coffee.
+                </li>
+                <li>
+                    <span class="spot-title">Kolacherie</span> (Hybernská 4)
+                    <br><span class="tag">Bäckerei</span> Frische trad. tschechische Kolatschen & Kaffee (3 Min. Fußweg).
+                </li>
+                <li>
+                    <span class="spot-title">Paul</span> (Celetná / Náměstí Republiky)
+                    <br><span class="tag">Bäckerei</span> Buttercroissants, Baguettes & Teilchen fürs Zimmer.
+                </li>
+            </ul>
+        </div>
+
+        <!-- KARTE 3: TAG 1 -->
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Tag 1: Montag, 26.10.</h2>
+                <span class="badge">Ankunft & Altstadt</span>
+            </div>
+            <ul class="timeline">
+                <li class="timeline-item">
+                    <div class="timeline-time">15:39 Uhr</div>
+                    <div class="timeline-text">Ankunft Hauptbahnhof & 11 Min. Fußweg zum Check-in.</div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-time">16:30 Uhr</div>
+                    <div class="timeline-text">Pulverturm, Repräsentationshaus & Altstädter Ring (Rathausuhr).</div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-time">17:30 Uhr</div>
+                    <div class="timeline-text">Banksy Museum Prague (Michalská 16).</div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-time">18:30 Uhr</div>
+                    <div class="timeline-text">Kaffeepause bei <strong>Super Tramp Coffee</strong>. <span class="tag tag-coffee">Coffee</span></div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-time">19:30 Uhr</div>
+                    <div class="timeline-text">Abendessen im <strong>Maitrea</strong> (Tófuie Gras, Healthy Poké). <span class="tag tag-veg">Vegetarisch</span></div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- KARTE 4: TAG 2 -->
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Tag 2: Dienstag, 27.10.</h2>
+                <span class="badge">Burgareal & Petřín</span>
+            </div>
+            <ul class="timeline">
+                <li class="timeline-item">
+                    <div class="timeline-time">09:00 Uhr</div>
+                    <div class="timeline-text">Karlsbrücke, St.-Veits-Dom, Burgareal & Goldenes Gässchen.</div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-time">12:30 Uhr</div>
+                    <div class="timeline-text">Mittagessen bei <strong>Vegan's Prague</strong> (Seitan-Gulasch). <span class="tag tag-veg">Vegan</span></div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-time">14:00 Uhr</div>
+                    <div class="timeline-text">Kaffeepause im <strong>Kafe & Hrnky</strong> (Nerudova). <span class="tag tag-coffee">Coffee</span></div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-time">15:30 Uhr</div>
+                    <div class="timeline-text">Spaziergang über die Hungermauer zum Aussichtsturm Petřín.</div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-time">18:30 Uhr</div>
+                    <div class="timeline-text">Abendessen im <strong>Lehká Hlava</strong> (Smoky BBQ Burrito). <span class="tag tag-veg">Vegetarisch</span></div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- KARTE 5: TAG 3 -->
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Tag 3: Mittwoch, 28.10.</h2>
+                <span class="badge">Feiertag & Letná</span>
+            </div>
+            <ul class="timeline">
+                <li class="timeline-item">
+                    <div class="timeline-time">09:00 Uhr</div>
+                    <div class="timeline-text">Nationalmuseum (Freier Eintritt am Nationalfeiertag).</div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-time">11:30 Uhr</div>
+                    <div class="timeline-text">Mittagessen im <strong>Palo Verde Bistro</strong> (Macro-Bowls). <span class="tag tag-veg">Vegan</span></div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-time">13:00 Uhr</div>
+                    <div class="timeline-text">Kampa-Insel & Liechtenstein-Palais (Tag der offenen Tür).</div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-time">15:00 Uhr</div>
+                    <div class="timeline-text">Kaffeepause im <strong>SmetanaQ</strong> (Blick auf Fluss & Burg). <span class="tag tag-coffee">Coffee</span></div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-time">16:30 Uhr</div>
+                    <div class="timeline-text">Letná-Park & Prager Metronom (Aussicht zum Sonnenuntergang).</div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-time">19:00 Uhr</div>
+                    <div class="timeline-text">Abendessen bei <strong>Forky’s</strong> (High-Protein Superbowls). <span class="tag tag-veg">Vegan</span></div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- KARTE 6: TAG 4 -->
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Tag 4: Donnerstag, 29.10.</h2>
+                <span class="badge">Neustadt & Abreise</span>
+            </div>
+            <ul class="timeline">
+                <li class="timeline-item">
+                    <div class="timeline-time">09:00 Uhr</div>
+                    <div class="timeline-text">Moldaupromenade & Tanzendes Haus (Tančící dům).</div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-time">10:30 Uhr</div>
+                    <div class="timeline-text">Rotierender Franz-Kafka-Kopf (Spálená).</div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-time">11:30 Uhr</div>
+                    <div class="timeline-text">Frühes Mittagessen bei Palo Verde oder Forky's. <span class="tag tag-veg">High-Protein</span></div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-time">12:30 Uhr</div>
+                    <div class="timeline-text">Abschluss-Kaffee in der <strong>EMA Espresso Bar</strong>. <span class="tag tag-coffee">Coffee</span></div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-time">13:45 Uhr</div>
+                    <div class="timeline-text">Gepäck im Hotel abholen & 11 Min. Fußweg zum Bahnhof.</div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-time">14:21 Uhr</div>
+                    <div class="timeline-text">Pünktliche Zugabfahrt ab Hauptbahnhof Prag.</div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>
